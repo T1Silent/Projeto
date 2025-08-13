@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário Loirinhaaa!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Tela 1: Boas-vindas -->
+    <div id="tela1" class="tela">
+        <h1>🎉 Feliz Aniversário Loirinhaaaa! 🎉</h1>
+        <img src="imagens/balao1.gif" alt="Balões animados" class="animacao">
+        <button onclick="mostrarTela('tela2')">Próximo</button>
+    </div>
+
+    <!-- Tela 2: Mensagem especial -->
+    <div id="tela2" class="tela escondida">
+        <h2>💖 Uma surpresa especial 💖</h2>
+        <p>Que seu dia seja incrível e cheio de alegria, você é demais!</p>
+        <img src="imagens/confete.gif" alt="Confetes animados" class="animacao">
+        <button onclick="mostrarTela('tela3')">Continuar</button>
+    </div>
+
+    <!-- Tela 3: QR Codes -->
+    <div id="tela3" class="tela escondida">
+        <h2>📱 Escaneie os QR Codes</h2>
+        <div class="qrcode">
+            <h3>Música</h3>
+            <img src="imagens/qr_musica.png" alt="QR Code Música">
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=DBfhDv2DEX0&list=RDDBfhDv2DEX0&start_radio=1'">Ouvir agora</button>
+        </div>
+
+        <div class="qrcode">
+            <h3>Vídeo</h3>
+            <img src="imagens/qr_video.png" alt="QR Code Vídeo">
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=75YxhxtZWKM'">Assistir agora</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
